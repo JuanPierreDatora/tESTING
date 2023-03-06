@@ -1,0 +1,108 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1599,1187" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,871" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: GitHub Desktop" sap:VirtualizedContainerService.HintSize="434,760" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="83486fc9-2bc2-4005-92c2-a7e1d792900b" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'grouping File'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83486fc9-2bc2-4005-92c2-a7e1d792900b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="54, 13, 18, 17" DesignTimeScaleFactor="1" FriendlyName="'grouping File'" FullSelectorArgument="&lt;ctrl name='Application menu' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;&lt;ctrl name='File' role='push button' /&gt;&lt;ctrl name='File' role='menu item' /&gt;&lt;ctrl name='File' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Application menu' role='menu bar' /&gt;&lt;ctrl name='File' role='menu item' /&gt;&lt;ctrl name='File' role='push button' /&gt;&lt;ctrl name='File' role='menu item' /&gt;&lt;ctrl name='File' role='grouping' automationid='' /&gt;" Guid="520befd6-ab25-4a7f-8143-def4e434b3bf" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAVCAYAAABCIB6VAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACqSURBVEhLY1DV0v9PCzxqMByPGgzHcIPdfQL+z5oz7//ylavhuKyy5n9Gdv7/ufMX/Q+NjAWzp82cDVaLbAg2jGIwSBNIM7ICZDw0DEY2DN1gUFDBgg0UjMgW4gzjJctWgA3CZTDI0ElTpsMNau3oBmMYn2wXgwyBOQKGkS2iyGBkF6Jjsg0GBcXCxUvByRBZPQxTFHnowQGyDKYPbjC18ajBcEwjg/X/AwCYbxR1McLgfQAAAABJRU5ErkJggg==" InformativeScreenshot="ed37a592e037fa76bcfb139dad21bf0f.png" ScopeSelectorArgument="&lt;wnd app='githubdesktop.exe' cls='Chrome_WidgetWin_1' title='GitHub Desktop' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ClickType="Single" DisplayName="Click 'grouping Branch'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="83486fc9-2bc2-4005-92c2-a7e1d792900b" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="253, 13, 37, 17" DesignTimeScaleFactor="1" FriendlyName="'grouping Branch'" FullSelectorArgument="&lt;ctrl name='Application menu' role='menu bar' /&gt;&lt;ctrl name='Branch' role='menu item' /&gt;&lt;ctrl name='Branch' role='push button' /&gt;&lt;ctrl name='Branch' role='menu item' /&gt;&lt;ctrl name='Branch' role='grouping' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Application menu' role='menu bar' /&gt;&lt;ctrl name='Branch' role='menu item' /&gt;&lt;ctrl name='Branch' role='push button' /&gt;&lt;ctrl name='Branch' role='menu item' /&gt;&lt;ctrl name='Branch' role='grouping' automationid='' /&gt;" Guid="a980c661-3102-4402-8e7d-34a9d97f576c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACkAAAAVCAYAAADb2McgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEJSURBVEhL7ZNNDoQgDIXnMG5m4zV14UlccAyjd5BDyAU6lPJTGMUYMXFBk5dYoc3na/003xbergpZShWylCpkKSWQAlZgoRboovNnNEqAVeyfoXYgJYw2x+JtHtj5M7oF2QhdLQU7f0Y3IAeYlIKpp7NuVtrVhdbBgMer4R3vF9j0moz6PkXogUIgF66GIFm/xJj8TrLLCKlfBJcjsY9DSH3TAZg624c/cxG464294g87H7f9ecjJeD8J3IVtbJ30P5zP48lwpeNO8zwky1PI2BUGcAiZ9g66B5lxEhv53Iz4DJJqjsZ9EZJHAP4btwGzoSSsp05ijo7bGh2u30XId6pCllKFLKMWfvF2Fqxve4xvAAAAAElFTkSuQmCC" InformativeScreenshot="a3d1e3d0865605e351befd28f35ec8e6.png" ScopeSelectorArgument="&lt;wnd app='githubdesktop.exe' cls='Chrome_WidgetWin_1' title='GitHub Desktop' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" FilePath="C:\Users\Juan-PierréduToitDat\AppData\Local\GitHubDesktop\app-3.2.0\githubdesktop.exe" IconBase64="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" InformativeScreenshot="69bdf486b1b5e0c15ae96f912a1492c2.png" Selector="&lt;wnd app='githubdesktop.exe' cls='Chrome_WidgetWin_1' title='GitHub Desktop' /&gt;" Title="GitHub Desktop" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
